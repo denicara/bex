@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💌 For You</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="floating-bears" aria-hidden="true"></div>
+
+
+  <main class="wrap">
+
+    <!-- ENVELOPE STAGE -->
+    <section id="stageEnvelope" class="stage active">
+      <div class="title">
+        <h1>Hi <span id="nameSlot">Bexy Bex</span> 💞</h1>
+        <p>Open with care babe</p>
+      </div>
+
+      <div class="envelope" id="envelope" role="button" aria-label="Open envelope" tabindex="0">
+        <div class="env-back"></div>
+        <div class="env-letter peek" id="letterPeek">
+          <div class="stamp">❤</div>
+          <div class="mini-line"></div>
+          <div class="mini-line short"></div>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap" id="flap"></div>
+      </div>
+
+      <p class="tiny">Look at the mini Benitos</p>
+    </section>
+
+    <!-- LETTER STAGE -->
+    <section id="stageLetter" class="stage">
+      <div class="paper">
+        <div class="paper-top">
+          <h2>Dear <span id="nameSlot2">Bexy Bex</span>,</h2>
+          <button id="skipBtn" class="btn ghost">Skip typing →</button>
+        </div>
+
+        <div class="paper-body">
+          <p id="typedText" class="typed"></p>
+          <span id="caret" class="caret" aria-hidden="true"></span>
+        </div>
+
+        <div class="paper-actions">
+          <button id="replayBtn" class="btn">Replay</button>
+          <button id="nextBtn" class="btn primary" disabled>Continue →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASK STAGE -->
+    <section id="stageAsk" class="stage">
+      <div class="paper center">
+        <h2>Bexy bex, will you be my Valentine? 💖</h2>
+
+        <div class="ask-actions" id="askArea">
+          <button id="yesBtn" class="btn primary big">Yes</button>
+          <button id="noBtn" class="btn dark big">No </button>
+        </div>
+
+        <p id="noHint" class="hint"></p>
+      </div>
+    </section>
+
+    <!-- YES STAGE -->
+    <section id="stageYes" class="stage">
+      <div class="paper center">
+        <h2>WOOOOO!!!</h2>
+        <p id="finalNote">
+          I cant wait to see you and Benito 💞💞💞
+        </p>
+
+        <p class="tiny">I love you</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
