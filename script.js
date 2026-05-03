@@ -50,7 +50,7 @@ const letterText = [
   `Sooo I have this very big crush on you and I think you are the prettiest girl in the whole wide world.`,
   `There is this holiday coming up. One of those holidays where I get to celebrate you!!!`,
   ``,
-  `It would be the WORLD to me if you could answer this question.`
+  `It would mean the WORLD to me if you could answer this question.`
 ].join("\n");
 
 let typingTimer = null;
